@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+    let num = {
+        number: 3
+    }
+
+    function getDoubled() {
+        return (this.number * this.number) * 2;
+    }
+
+    console.log(getDoubled.call(num));
+
+    let trip = getDoubled.call(num);
+    
+    function getDoubledTrippled() {
+        return trip * 3;
+    }
+
+    console.log(getDoubledTrippled());
+    
+    
+
+
+
+    // var num = {
+    //     number: 3,
+
+    //     getDoubled: function() {
+    //         console.log( (this.number * this.number)*2 );
+    //     }
+    // };
+    // num.getDoubled();
+
+    // var trip = num.getDoubled();
+
+
+    //     function getDoubledTrippled() {
+    //         return trip * 3;
+    //     }
+
+    //     getDoubledTrippled();
+
+    
+    </script>
+    
+</body>
+</html>
